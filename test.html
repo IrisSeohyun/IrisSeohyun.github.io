@@ -1,20 +1,24 @@
-<form action="#" id="formInfor">
-       Tên: <input type="text" name="txtFname" value="Diiiiiiiii"><br>
-       Họ: <input type="text" name="txtLName" value="Diiiiiiiii"><br>
-       <input type="submit" value="Submit">
-   </form>
-   <p>Click vào nút "Xem thông tin" để hiển thị các thông tin trong form</p>
-   <button onlick="myFunction()">Xem thông tin </button>
-   <p id="demo"></p>
-   <script>
-    
-        function myFunction() {
-            var infor=document.forms["formInfor"];
-            var text="";
-            var i;
-            for(i=0;i<infor.length-1;i++){
-                text=text+ infor.elements[i].value+"<br>";
-            }
-            document.getElementById("demo").innerHTML=text;
-        }
-    </script>
+<form id="frmInfor" action="/action_page.php">
+		Ten: <input type="text" name="txtFname" value="Hung"><br>
+		Ho va Ten Lot: <input type="text" name="txtLname" value="Giang Vy"><br><br>
+		<input type="submit" value="submit">
+	</form>
+
+	<p>Click vao nut "Xem thong tin" de hien thi cac thong tin trong form</p>
+
+	<button onclick="myFunction()">Xem thong tin</button>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		function myFunction() {
+			var infor = document.forms["frmInfor"];
+			var text ="";
+
+			var i;
+			for (i=0; i< infor.length-1; i++) {
+				text = text + infor.elements[i].value + "<br>";
+			} //end for
+
+			document.getElementById("demo").innerHTML = text;
+		} //end for
+	</script>

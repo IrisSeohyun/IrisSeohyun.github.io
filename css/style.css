@@ -866,7 +866,7 @@ h1, h2, h3, h4, h5,
   bottom: 0;
   right: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .site-blocks-cover .player {
@@ -877,7 +877,7 @@ h1, h2, h3, h4, h5,
 
 .site-blocks-cover, .site-blocks-cover > .container > .row {
   min-height: 600px;
-  height: calc(100vh);
+  height: calc(66vh);
 }
 
 .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
